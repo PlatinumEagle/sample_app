@@ -5,8 +5,13 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'			# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 group :development, :test do
-	gem 'sqlite3', '1.3.7'		# Use sqlite3 as the database for Active Record
+	gem 'sqlite3', '1.3.7'			# Use sqlite3 as the database for Active Record
 	gem 'rspec-rails', '2.13.1'
+	gem 'guard-rspec', '2.5.0'		# Monitors for changes to run tests upon file changes
+	gem 'terminal-notifier-guard'	# Takes notifications from guard and uses Mac OSX Notifications
+	gem 'spork-rails', github: 'sporkrb/spork-rails'
+	gem 'guard-spork', '1.5.0'		# Enable guard to work with spork
+	gem 'childprocess', '0.3.6'		
 end
 
 group :test do
