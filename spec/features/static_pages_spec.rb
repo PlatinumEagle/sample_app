@@ -1,6 +1,10 @@
 require "spec_helper"
 
-feature "Static pages" do
+feature "Home page", %q{
+	In order to find out more about the site
+	As a visitor
+	I want to get a good overview of what I can do.
+	} do
 
 	scenario "User views 'Home' page and should find content 'Sample App'" do
 		visit "/static_pages/home"
@@ -16,6 +20,9 @@ feature "Static pages" do
 		visit "/static_pages/about"
 		expect(page).to have_text("About Us")
 	end
+
+	scenario ""
+	
 
 end
 
