@@ -32,4 +32,7 @@ doc/
 .idea
 .secret
 
+# Database connection strings
+database.yml
+
 # --- END Custom Ignores ---
