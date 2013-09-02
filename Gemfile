@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'			            # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bootstrap-sass', '~> 2.3.2.1'    # Twitter Bootstrap
+gem 'bcrypt-ruby', '3.0.1'            # Encryption framework
 gem 'pg', '0.15.1'				            # Use PostgreSQL as the database
 
 gem 'sass-rails', '4.0.0'		# Use SCSS for stylesheets
